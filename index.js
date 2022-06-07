@@ -12,6 +12,8 @@ client.on('ready', () => {
     console.log('HI YASH\nI M JARVIS');
 });
 
+let info = "MADE BY - TEAM PROBOTS\nYASH SAHIL ATHARVA SUSHANT\n";
+
 client.initialize();
 
 client.on('message', async message => {
@@ -22,11 +24,11 @@ client.on('message', async message => {
     const cmd = message.body
     switch (cmd) {
         case 'Hi':
-            message.reply("HELLO\n\nI M YASH'S BOT\n\nType Any\n\n1. Info\n2. Covid Updates\n3. Memes\n4. Memes On Programming\n5. Memes On Cricket\n6. Memes On Football\n7. Memes On Marvel\n")
+            message.reply("HELLO\n\nI M JARVIS\n\nType Any\n\n1. Info\n2. Covid Updates\n3. Memes\n4. Memes On Programming\n5. Memes On Cricket\n6. Memes On Football\n7. Memes On Marvel\n")
             break
 
         case '1':
-            message.reply('NAME - YASH JITENDRA CHINCHOLE')
+            message.reply(info)
             break
 
         case '2':
