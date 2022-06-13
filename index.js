@@ -22,7 +22,7 @@ client.on('message', async message => {
     const cmd = message.body
     switch (cmd) {
         case 'Hi':
-            message.reply("HELLO\n*I M JARVIS*😎\nType Any💻\n\n1 - INFO\n2 - TIME TABLE\n3 - COVID UPDATES\n4 - MEMES\n")
+            message.reply("HELLO\n*I M JARVIS*😎\nType Any💻\n\n*1* - INFO\n*2* - TIME TABLE\n*3* - COVID UPDATES\n*4* - MEMES\n")
             break
 
         case '1':
@@ -30,13 +30,13 @@ client.on('message', async message => {
             break
 
         case '2':
-            const tt = await axios("https://meme-api.herokuapp.com/gimme/pccoe_tt")
+            const tt = await axios("https://meme-api.herokuapp.com/gimme/pccoe")
                 .then(res => res.data)
             client.sendMessage(message.from, await MessageMedia.fromUrl(tt.url))
             break
 
         case '3':
-            message.reply("Type Any💻\n\n31 - INDIA\n32 - US\n33 - CHINA\n34 - GERMANY\n")
+            message.reply("Type Any💻\n\n*31* - INDIA\n*32* - US\n*33* - CHINA\n*34* - GERMANY\n")
             break
 
         case '31':
@@ -64,7 +64,7 @@ client.on('message', async message => {
             break
 
         case '4':
-            message.reply("Type Any💻\n\n41 - Memes On Programming\n42 - Memes On Cricket\n43 - Memes On Football\n44 - Memes On Marvel\n")
+            message.reply("Type Any💻\n\n*41* - Memes On Programming\n*42* - Memes On Cricket\n*43* - Memes On Football\n*44* - Memes On Marvel\n")
             break
 
         case '41':
