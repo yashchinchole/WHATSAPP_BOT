@@ -26,18 +26,17 @@ client.on('message', async message => {
             break
 
         case '1':
-            message.reply("MADE BY - TEAM PROBOTS\n\nYASH - SAHIL - ATHARVA - SUSHANT\n");
+            message.reply("MADE BY - TEAM PROBOTS\n\n*YASH - SAHIL - ATHARVA - SUSHANT*\n");
             break
 
         case '2':
-            // message.reply(FY_TT.jpeg);
-            const tt = await axios("O:\\YASH\\0\\GitHub\\WHATSAPP_BOT")
+            const tt = await axios("https://meme-api.herokuapp.com/gimme/pccoe_tt")
                 .then(res => res.data)
             client.sendMessage(message.from, await MessageMedia.fromUrl(tt.url))
             break
 
         case '3':
-            message.reply("Type Any💻\n\n21 - INDIA\n22 - US\n23 - CHINA\n24 - GERMANY\n")
+            message.reply("Type Any💻\n\n31 - INDIA\n32 - US\n33 - CHINA\n34 - GERMANY\n")
             break
 
         case '31':
@@ -65,7 +64,7 @@ client.on('message', async message => {
             break
 
         case '4':
-            message.reply("Type Any💻\n\n31 - Memes On Programming\n32 - Memes On Cricket\n33 - Memes On Football\n34 - Memes On Marvel\n")
+            message.reply("Type Any💻\n\n41 - Memes On Programming\n42 - Memes On Cricket\n43 - Memes On Football\n44 - Memes On Marvel\n")
             break
 
         case '41':
