@@ -30,10 +30,13 @@ client.on('message', async message => {
             break
 
         case '2':
-            const tt = await axios("https://meme-api.herokuapp.com/gimme/pccoe")
-                .then(res => res.data)
-            client.sendMessage(message.from, await MessageMedia.fromUrl(tt.url))
+            const url = `https://i.ibb.co/W60LxvY/FY-TT.jpg`
+            client.sendMessage(message.from, await MessageMedia.fromUrl(url))
             break
+        // const tt = await axios("https://meme-api.herokuapp.com/gimme/pccoett")
+        //     .then(res => res.data)
+        // client.sendMessage(message.from, await MessageMedia.fromUrl(tt.url))
+        // break
 
         case '3':
             message.reply("Type Any💻\n\n*31* - INDIA\n*32* - US\n*33* - CHINA\n*34* - GERMANY\n")
