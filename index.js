@@ -40,7 +40,7 @@ client.on('message', async message => {
         // break
 
         case '3':
-            message.reply("*Type Any 💻*\n\n*31* - INDIA\n*32* - US\n*33* - CHINA\n*34* - GERMANY\n")
+            message.reply("*Type Any 💻*\n\n*31* - INDIA\n*32* - US\n*33* - GERMANY\n")
             break
 
         case '31':
@@ -56,12 +56,6 @@ client.on('message', async message => {
             break
 
         case '33':
-            const c = await axios("https://coronavirus-19-api.herokuapp.com/countries/china")
-                .then(res => res.data)
-            message.reply(`CHINA Has A Total Of : ${c.cases} Covid Cases`)
-            break
-
-        case '34':
             const d = await axios("https://coronavirus-19-api.herokuapp.com/countries/germany")
                 .then(res => res.data)
             message.reply(`GERMANY Has A Total Of : ${d.cases} Covid Cases`)
