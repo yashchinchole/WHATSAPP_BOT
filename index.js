@@ -22,7 +22,7 @@ client.on('message', async message => {
     const cmd = message.body
     switch (cmd) {
         case 'Hi':
-            message.reply("HELLO\n*I M JARVIS* 😎\n\nMADE BY - TEAM PROBOTS\n *YASH - SAHIL - ATHARVA - SUSHANT*\n\n *Type Any 💻*\n\n *1* - TECHFEST 2k22\n *2* - TIME TABLE\n *3* - COVID UPDATES\n *4* - MEMES\n")
+            message.reply("HELLO\n*I M JARVIS* 😎\n\nMADE BY - TEAM PROBOTS\n *YASH - SAHIL - ATHARVA - SUSHANT*\n\n *Type Any 💻*\n\n*1* - TECHFEST 2k22\n*2* - TIME TABLE\n*3* - COVID UPDATES\n*4* - MEMES\n")
             break
 
         case '1':
@@ -38,7 +38,7 @@ client.on('message', async message => {
             break
 
         case '13':
-            message.reply("Mr. Dinesh Kute : 77094 95376\nMr. D. A. Anarse : 92733 73573\nPrathmesh Bacchav : 98236 32630")
+            message.reply("Mr. Dinesh Kute : 77094 95376\n\nMr. D. A. Anarse : 92733 73573\n\nPrathmesh Bacchav : 98236 32630")
             break
 
         case '2':
