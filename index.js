@@ -42,7 +42,7 @@ client.on('message', async message => {
             break
 
         case '14':
-            message.reply("Mr. Dinesh Kute : 77094 95376\nMr. D. A. Anarse : 92733 73573\n\nPrathmesh Bacchav : 98236 32630\nSaie Mukane : 72496 15728\nAtharva Joshi : 96239 45897")
+            message.reply("Mr. Dinesh Kute : 77094 95376\nMr. D. A. Anarse : 92733 73573\nPrathmesh Bacchav : 98236 32630\nSaie Mukane : 72496 15728\nAtharva Joshi : 96239 45897")
             break
 
         case '2':
