@@ -21,22 +21,14 @@ client.on('message', async message => {
 
     const cmd = message.body
     switch (cmd) {
-        case 'Hi':
-            message.reply("HELLO\n*I M JARVIS* 😎\n\nMADE BY\n*YASH - SAHIL - ATHARVA - SUSHANT*\n\n*Type Any 💻*\n\n*1* - TECHFEST 2k22\n*2* - TIME TABLE\n*3* - COVID UPDATES\n*4* - MEMES\n")
-            break
-
-        case 'hi':
-            message.reply("HELLO\n*I M JARVIS* 😎\n\nMADE BY\n*YASH - SAHIL - ATHARVA - SUSHANT*\n\n*Type Any 💻*\n\n*1* - TECHFEST 2k22\n*2* - TIME TABLE\n*3* - COVID UPDATES\n*4* - MEMES\n")
-            break
-
-        case 'HI':
+        case 'Hi' || 'hi' || 'HI':
             message.reply("HELLO\n*I M JARVIS* 😎\n\nMADE BY\n*YASH - SAHIL - ATHARVA - SUSHANT*\n\n*Type Any 💻*\n\n*1* - TECHFEST 2k22\n*2* - TIME TABLE\n*3* - COVID UPDATES\n*4* - MEMES\n")
             break
 
         case '1':
             message.reply("*Type Any 💻*\n\n*11* - Website\n*12* - About Events\n*13* - Registration\n*14* - Contacts\n");
             break
-            
+
         case '11':
             message.reply("http://techfest2k22.web.app");
             break
