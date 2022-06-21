@@ -46,10 +46,14 @@ client.on('message', async message => {
             break
 
         case '2':
-            client.sendMessage(message.from, await MessageMedia.fromFilePath('O:\\YASH\\0\\GitHub\\WHATSAPP_BOT\\TT.png'))
+            client.sendMessage(message.from, await MessageMedia.fromFilePath('O:\\YASH\\0\\GitHub\\WHATSAPP_BOT\\MTT.pdf'))
             break
 
         case '21':
+            client.sendMessage(message.from, await MessageMedia.fromFilePath('O:\\YASH\\0\\GitHub\\WHATSAPP_BOT\\TT.png'))
+            break
+
+        case '22':
             const url = `https://i.ibb.co/K54Fw4K/Hnet-com-image.png`
             client.sendMessage(message.from, await MessageMedia.fromUrl(url))
             break
