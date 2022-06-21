@@ -22,7 +22,7 @@ client.on('message', async message => {
     const cmd = message.body
     switch (cmd) {
         case 'Hi':
-            message.reply("Hello There 🖐🏻\nI Am Yours *WHATSAPP CHATBOT* 😎\n\nMADE BY\n*YASH - SAHIL - ATHARVA - SUSHANT*\n\n*Type Any 💻*\n\n*1* - TECHFEST 2k22\n*2* - TIME TABLE\n*3* - COVID UPDATES\n*4* - MEMES\n")
+            message.reply("Hello There 🖐🏻\nI Am Yours *WHATSAPP CHATBOT* 😎\n\nMADE BY\n*YASH - SAHIL - ATHARVA - SUSHANT*\n\n*Type Any 💻*\n\n*1* - TECHFEST 2k22\n*2* - TIME TABLE\n*3* - COVID UPDATES\n*4* - MEMES\n*5* - ABOUT US\n")
             break
 
         case '1':
@@ -46,7 +46,7 @@ client.on('message', async message => {
             break
 
         case '2':
-            client.sendMessage(message.from, await MessageMedia.fromFilePath('O:\\YASH\\0\\GitHub\\WHATSAPP_BOT\\MTT.pdf'))
+            client.sendMessage(message.from, await MessageMedia.fromFilePath('O:\\YASH\\0\\GitHub\\WHATSAPP_BOT\\Master_Time_Table.pdf'))
             break
 
         case '21':
@@ -116,6 +116,10 @@ client.on('message', async message => {
             const marvel = await axios("https://meme-api.herokuapp.com/gimme/marvelmemes")
                 .then(res => res.data)
             client.sendMessage(message.from, await MessageMedia.fromUrl(marvel.url))
+            break
+
+        case '5':
+            message.reply("")
             break
     }
 });
