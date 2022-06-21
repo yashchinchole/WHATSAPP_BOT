@@ -21,7 +21,7 @@ client.on('message', async message => {
 
     const cmd = message.body
     switch (cmd) {
-        case 'Hi' || 'hi' || 'HI':
+        case 'Hi':
             message.reply("HELLO\n*I M JARVIS* 😎\n\nMADE BY\n*YASH - SAHIL - ATHARVA - SUSHANT*\n\n*Type Any 💻*\n\n*1* - TECHFEST 2k22\n*2* - TIME TABLE\n*3* - COVID UPDATES\n*4* - MEMES\n")
             break
 
