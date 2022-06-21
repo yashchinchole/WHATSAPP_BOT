@@ -46,7 +46,7 @@ client.on('message', async message => {
             break
 
         case '2':
-            client.sendMessage(message.from, await MessageMedia.fromFilePath('O:\\YASH\\0\\GitHub\\WHATSAPP_BOT\\Master_Time_Table.pdf'))
+            client.sendMessage(message.from, await MessageMedia.fromFilePath('O:\\YASH\\0\\GitHub\\WHATSAPP_BOT\\Time_Table.pdf'))
             break
 
         case '21':
