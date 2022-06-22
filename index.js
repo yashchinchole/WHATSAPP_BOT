@@ -119,7 +119,7 @@ client.on('message', async message => {
             break
 
         case '5':
-            message.reply("")
+            message.reply("YASH : https://www.linkedin.com/in/yashchinchole\nSAHIL : https://www.linkedin.com/in/sahil-bomble-0432a01b9\nATHARVA : https://www.linkedin.com/in/atharva-bokade-249871226\nSUSHANT : https://www.linkedin.com/in/sushantbansode")
             break
     }
 });
