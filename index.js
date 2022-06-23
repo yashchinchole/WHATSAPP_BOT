@@ -3,6 +3,9 @@ const { Client } = require('whatsapp-web.js');
 const client = new Client();
 const { MessageMedia } = require('whatsapp-web.js');
 const axios = require('axios');
+// dotenv.config();
+// const dotenv = require('dotenv');
+// const port = process.nextTick.PORT || 5000
 
 client.on('qr', qr => {
     qrcode.generate(qr, { small: true });
@@ -22,7 +25,7 @@ client.on('message', async message => {
     const cmd = message.body
     switch (cmd) {
         case 'Hi':
-            message.reply("Hello There 🖐🏻\nI Am Yours *WHATSAPP CHATBOT* 😎\n\nMADE BY\n*YASH - SAHIL - ATHARVA - SUSHANT*\n\n*Type Any 💻*\n\n*1* - TECHFEST 2k22\n*2* - TIME TABLE\n*3* - COVID UPDATES\n*4* - MEMES\n*5* - ABOUT US\n")
+            message.reply("Hello There 🖐🏻\nI Am Yours *WHATSAPP BOT*  👨🏻‍💻\n\nMADE BY 😎\n*YASH - SAHIL - ATHARVA - SUSHANT*\n\n*Type Any 💻*\n\n*1* - TECHFEST 2k22\n*2* - TIME TABLE\n*3* - COVID UPDATES\n*4* - MEMES\n*5* - ABOUT US\n")
             break
 
         case '1':
@@ -42,7 +45,7 @@ client.on('message', async message => {
             break
 
         case '14':
-            message.reply("Mr. Dinesh Kute : 77094 95376\nMr. D. A. Anarse : 92733 73573\nPrathmesh Bacchav : 98236 32630\nSaie Mukane : 72496 15728\nAtharva Joshi : 96239 45897")
+            message.reply("Mr. Dinesh Kute : 77094 95376\nMr. D. A. Anarse : 92733 73573\nPrathmesh Bachhav : 98236 32630\nSaie Mukane : 72496 15728\nAtharva Joshi : 96239 45897")
             break
 
         case '2':
@@ -94,6 +97,12 @@ client.on('message', async message => {
             message.reply("*Type Any 💻*\n\n*41* - Memes On Programming\n*42* - Memes On Cricket\n*43* - Memes On Football\n*44* - Memes On Marvel\n")
             break
 
+        case '0':
+            const me = await axios("https://meme-api.herokuapp.com/gimme/memes")
+                .then(res => res.data)
+            client.sendMessage(message.from, await MessageMedia.fromUrl(me.url))
+            break
+
         case '41':
             const memes = await axios("https://meme-api.herokuapp.com/gimme/ProgrammerHumor")
                 .then(res => res.data)
@@ -123,3 +132,7 @@ client.on('message', async message => {
             break
     }
 });
+
+// app.listen(port, () => {
+//     console.log("Server is running on port " + port);
+// })
