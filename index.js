@@ -28,6 +28,18 @@ client.on('message', async message => {
             message.reply("Hello There 🖐🏻\nI Am Yours *WHATSAPP BOT*  👨🏻‍💻\n\nMADE BY 😎\n*YASH - SAHIL - ATHARVA - SUSHANT*\n\n*Type Any 💻*\n\n*1* - TECHFEST 2k22\n*2* - TIME TABLE\n*3* - COVID UPDATES\n*4* - MEMES\n*5* - ABOUT US\n")
             break
 
+        case 'HI':
+            message.reply("Hello There 🖐🏻\nI Am Yours *WHATSAPP BOT*  👨🏻‍💻\n\nMADE BY 😎\n*YASH - SAHIL - ATHARVA - SUSHANT*\n\n*Type Any 💻*\n\n*1* - TECHFEST 2k22\n*2* - TIME TABLE\n*3* - COVID UPDATES\n*4* - MEMES\n*5* - ABOUT US\n")
+            break
+
+        case 'hi':
+            message.reply("Hello There 🖐🏻\nI Am Yours *WHATSAPP BOT*  👨🏻‍💻\n\nMADE BY 😎\n*YASH - SAHIL - ATHARVA - SUSHANT*\n\n*Type Any 💻*\n\n*1* - TECHFEST 2k22\n*2* - TIME TABLE\n*3* - COVID UPDATES\n*4* - MEMES\n*5* - ABOUT US\n")
+            break
+
+        case 'hii':
+            message.reply("Hello There 🖐🏻\nI Am Yours *WHATSAPP BOT*  👨🏻‍💻\n\nMADE BY 😎\n*YASH - SAHIL - ATHARVA - SUSHANT*\n\n*Type Any 💻*\n\n*1* - TECHFEST 2k22\n*2* - TIME TABLE\n*3* - COVID UPDATES\n*4* - MEMES\n*5* - ABOUT US\n")
+            break
+
         case '1':
             message.reply("*Type Any 💻*\n\n*11* - Website\n*12* - TechFest Schedule\n*13* - About Events\n*14* - Registration\n*15* - Contacts\n");
             break
