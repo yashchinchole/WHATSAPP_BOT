@@ -21,20 +21,19 @@ client.on('message', async message => {
 
     const cmd = message.body
     if (message.body == "Yash" || message.body == "Hi" || message.body == "YASH" || message.body == "yash" || message.body == "hi" || message.body == "HI" || message.body == "Hii" || message.body == "Hey") {
-        message.reply("Hello 🖐🏻\nI M *YASH* 😎\n\n*Type Any 💻*\n\n*0* - Time Table\n*1* - Memes\n*2* - Contact\n")
+        message.reply("Hello 🖐🏻\nI M *YASH* 😎\n\n*Type Any 💻*\n\n*1* - Memes\n*2* - Contact\n")
     }
 
+    let date = new Date();
+    let hours1 = date.getHours();
+    let minutes1 = date.getMinutes();
+    let seconds1 = date.getSeconds();
+    let date2 = new Date();
+    let hours2 = date2.getHours();
+    let minutes2 = date2.getMinutes();
+    let seconds2 = date2.getSeconds();
+
     switch (cmd) {
-        case '0':
-            for (let i = 0; i < 10; i++) {
-                client.sendMessage(message.from, await MessageMedia.fromFilePath('O:\\YASH\\0\\GitHub\\WHATSAPP_BOT\\Time_Table.pdf'))
-                break
-            }
-
-        case '1':
-            message.reply("*10* - Memes\n*11* - Programming\n*12* - Cricket\n*13* - Football\n*14* - Marvel\n")
-            break
-
         case '10':
             const me = await axios("https://meme-api.herokuapp.com/gimme/memes")
                 .then(res => res.data)
